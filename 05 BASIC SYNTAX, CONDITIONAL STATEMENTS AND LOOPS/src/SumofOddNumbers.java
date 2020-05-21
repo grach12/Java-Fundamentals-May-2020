@@ -7,12 +7,12 @@ public class SumofOddNumbers {
         int n = Integer.parseInt(scan.nextLine());
 
         int sum = 0;
-        int counter = 0;
 
-        for (int i = 0; i < n; i++) {
-            sum += n;
-            counter++;
-            System.out.println(counter++);
+        for (int i = 1; i <= n; i++) {
+
+            System.out.println(2*i-1);
+            sum += 2*i-1;
+
         }
         System.out.println("Sum: " + sum);
     }
