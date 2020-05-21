@@ -13,7 +13,7 @@ public class BackIn30Minutes {
         }
         if (hours>23){
             //minutes++;
-            hours-=24;
+            hours=0;
         }
         System.out.printf("%d:%02d", hours, minutes);
     }
