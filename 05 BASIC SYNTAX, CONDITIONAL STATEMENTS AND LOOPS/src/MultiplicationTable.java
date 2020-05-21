@@ -5,11 +5,10 @@ public class MultiplicationTable {
         Scanner scan = new Scanner(System.in);
 
         int n = Integer.parseInt(scan.nextLine());
-        int result =0;
-
-        for (int i = 1; i <=10 ; i++) {
-            result = n*i;
-            System.out.printf("%d X %d = %d%n", n, i, result);
+        int times = 1;
+        while (times <=10) {
+            System.out.printf("%d X %d = %d%n", n, times,n*times );
+            times++;
         }
     }
 }
