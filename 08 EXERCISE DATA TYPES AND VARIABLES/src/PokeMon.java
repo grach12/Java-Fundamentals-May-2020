@@ -21,4 +21,3 @@ public class PokeMon {
         System.out.println(pokes);
     }
 }
-
