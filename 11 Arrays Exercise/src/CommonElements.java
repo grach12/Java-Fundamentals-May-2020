@@ -7,17 +7,12 @@ public class CommonElements {
         String[] first = scan.nextLine().split(" ");
         String[] second = scan.nextLine().split(" ");
 
-        for (int i = 0; i < first.length ; i++) {
-          //  System.out.println(first[i]);
-         //   System.out.println(second[i]);
-            if (first[i].equals(second[i])) {
-                System.out.print(first[i]);
+        for (String elementOne : second) {
+            for (String secondElement : first) {
+                if (elementOne.equals(secondElement)){
+                    System.out.print(elementOne + " ");
+                }
             }
-//                System.out.printf("Arrays are not identical."+
-//                        " Found difference at %d index.",i);
-                 //izliza ot main metoda
         }
-       // System.out.printf("Arrays are identical. Sum: %d%n",sum);
     }
 }
-

@@ -5,20 +5,40 @@ public class Train {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-     int n = Integer.parseInt(scan.nextLine());
+        int wagoonsCount = Integer.parseInt(scan.nextLine());
 
-        int[] countWagon = new int[n];
+        int[] train = new int[wagoonsCount];
+
+        for (int i = 0; i < wagoonsCount; i++) {
+            train[i] = Integer.parseInt(scan.nextLine());
+        }
+
         int sum = 0;
-        for (int i = 0;i < n; i++) {
-            countWagon[i] = Integer.parseInt(scan.nextLine());
-            int people = countWagon[i];
-            System.out.print (countWagon[i]+" ");
-            sum+=people;
+        for (int waggon : train) {
+            sum=sum+waggon;
+            System.out.print(waggon + " ");
         }
         System.out.println();
         System.out.println(sum);
     }
 }
+
+
+//     int wagoonsCount = Integer.parseInt(scan.nextLine());
+//
+//        int[] train = new int[wagoonsCount];
+//        int sum = 0;
+//        for (int i = 0;i < wagoonsCount; i++) {
+//            train[i] = Integer.parseInt(scan.nextLine());
+//            int people = train[i];
+//
+//            System.out.print (train[i]+" ");
+//            sum+=people;
+//        }
+//        System.out.println();
+//        System.out.println(sum);
+//    }
+//}
 
    /*     String values = scan.nextLine();
         String[] wagons = values.split(" ");
