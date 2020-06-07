@@ -8,8 +8,8 @@ public class EqualSums {
 
         int[] numbers = new int[input.length];
 
-        for (int i = 0; i <numbers.length ; i++) {
-            numbers[i]= Integer.parseInt(input[i]);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = Integer.parseInt(input[i]);
         }
         boolean flag = false;
         int index=0;
