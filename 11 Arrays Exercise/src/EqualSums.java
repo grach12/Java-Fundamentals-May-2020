@@ -12,29 +12,28 @@ public class EqualSums {
             numbers[i] = Integer.parseInt(input[i]);
         }
         boolean flag = false;
-        int index=0;
-        for (int i = 0; i <input.length ; i++) {
+        int index = 0;
+        for (int i = 0; i < input.length; i++) {
             int leftSum = 0;
 
-            for (int j = 0; j <i ; j++) {
-                leftSum=leftSum+numbers[j];
+            for (int j = 0; j < i; j++) {
+                leftSum = leftSum + numbers[j];
             }
 
             int rightSum = 0;
-            for (int j = i+1; j <numbers.length ; j++) {
-                rightSum=rightSum+numbers[j];
+            for (int j = i + 1; j < numbers.length; j++) {
+                rightSum = rightSum + numbers[j];
             }
-            if (leftSum==rightSum){
-                flag=true;
-                index=i;
+            if (leftSum == rightSum) {
+                flag = true;
+                index = i;
                 break;
             }
         }
-        if (flag){
+        if (flag) {
             System.out.println(index);
-        }else {
+        } else {
             System.out.println("no");
         }
-
     }
 }

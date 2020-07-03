@@ -10,8 +10,8 @@ public class Array3 {
         for (int i = 0; i <num.length ; i++) {
             num[i]=1;
             num[5]=num[2]+num[7];
-            System.out.println(num[10]);
         }
+        System.out.println(num[5]);
     }
 }
 

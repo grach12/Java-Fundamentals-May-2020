@@ -17,7 +17,7 @@ public class Arrays {
             name[i]=scan.nextLine();
         }
 
-        for (int i = 0; i < name.length; i++) {   //wzimame info
+        for (int i = 0; i < name.length; i++) {
             System.out.println(name[i]);
         }
 
